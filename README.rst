@@ -39,7 +39,7 @@ Add ``graphiql_debug_toolbar`` to your *INSTALLED_APPS* settings:
 
     INSTALLED_APPS = [
         ...
-        'debug_toolbar',
+        'debug_    kkkkk toolbar',
         'graphiql_debug_toolbar',
     ]
 
