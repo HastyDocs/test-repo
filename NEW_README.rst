@@ -4,7 +4,7 @@ Django GraphiQL Debug Toolbar
 |Pypi| |Build Status| |Codecov|
 
 
-Django `Debug Toolbar`_ for `GraphiQL`_ IDE
+ `Debug Toolbar`_ for `GraphiQL`_ IDE
 
 .. _GraphiQL: https://github.com/graphql/graphiql
 .. _Debug Toolbar: https://github.com/jazzband/django-debug-toolbar
