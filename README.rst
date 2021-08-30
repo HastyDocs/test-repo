@@ -14,7 +14,7 @@ Django `Debug Toolbar`_ for `GraphiQL`_ IDE
 
 New Dependencies
 ------------
-
+BAD IDEA
 * Python ≥ 3.4
 * Django ≥ 1.11
 
