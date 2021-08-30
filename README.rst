@@ -12,7 +12,7 @@ Django `Debug Toolbar`_ for `GraphiQL`_ IDE
 
 .. image:: https://user-images.githubusercontent.com/5514990/36340937-1937ee68-1419-11e8-8477-40622e98c312.gif
 
-Dependencies
+New Dependencies
 ------------
 
 * Python ≥ 3.4
