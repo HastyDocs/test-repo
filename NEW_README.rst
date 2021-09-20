@@ -137,6 +137,7 @@ Add ``graphiql_debug_toolbar`` to your *INSTALLED_APPS* settings:
         'debug_toolbar',
         'graphiql_debug_toolbar',
     ]
+    test
 
 
 **Replace** the Django Debug Toolbar **middleware** with the GraphiQL Debug Toolbar one. 
