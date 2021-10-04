@@ -1,4 +1,4 @@
-Django GraphiQL Debug Toolbar
+50 GraphiQL Debug Toolbar
 =============================
 
 |Pypi| |Build Status| |Codecov|
