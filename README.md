@@ -1,31 +1,39 @@
-# Visual Studio Code - Open Source ("Code - OSS")
-[![Feature Requests](https://img.shields.io/github/issues/microsoft/vscode/feature-request.svg)](https://github.com/microsoft/vscode/issues?q=is%3Aopen+is%3Aissue+label%3Afeature-request+sort%3Areactions-%2B1-desc)
-[![Bugs](https://img.shields.io/github/issues/microsoft/vscode/bug.svg)](https://github.com/microsoft/vscode/issues?utf8=✓&q=is%3Aissue+is%3Aopen+label%3Abug)
-[![Gitter](https://img.shields.io/badge/chat-on%20gitter-yellow.svg)](https://gitter.im/Microsoft/vscode)
+2.3.6. Filtering
+There are several ways to filter the objects shown in the 3D view. Filtering can be performed with clipping planes that are associated with floors or through filter buttons that can quickly show/hide categories of objects.
 
-## The Repository
+To use clipping, the user must first define floors for the model as discussed in Section 8.5. Once the floors are defined, a floor can be selected by using the Floor Drop-down above the 3D or 2D view as shown in Figure 7.
 
-This repository ("`Code - OSS`") is where we (Microsoft) develop the [Visual Studio Code](https://code.visualstudio.com) product together with the community. Not only do we work on code and issues here, we also publish our [roadmap](https://github.com/microsoft/vscode/wiki/Roadmap), [monthly iteration plans](https://github.com/microsoft/vscode/wiki/Iteration-Plans), and our [endgame plans](https://github.com/microsoft/vscode/wiki/Running-the-Endgame). This source code is available to everyone under the standard [MIT license](https://github.com/microsoft/vscode/blob/main/LICENSE.txt).
+![pyro-scrn-floor-show](https://user-images.githubusercontent.com/2109426/136003233-4ebb83ac-d145-40dc-9be5-98310067b72b.png)
 
-## Visual Studio Code
 
-<p align="center">
-  <img alt="VS Code in action" src="https://user-images.githubusercontent.com/35271042/118224532-3842c400-b438-11eb-923d-a5f66fa6785a.png">
-</p>
+pyro scrn floor show
+Figure 7. Floors drop-down
+Once a floor has been selected, its clipping planes will be applied to the entire scene to only show objects within the clipping region.
 
-[Visual Studio Code](https://code.visualstudio.com) is a distribution of the `Code - OSS` repository with Microsoft specific customizations released under a traditional [Microsoft product license](https://code.visualstudio.com/License/).
+Filtering can also be performed using the filter toolbar buttons as shown in Figure 8. Selecting/deselecting these buttons will quickly show/hide all objects of a specific type, such as obstructions, holes, vents, etc.
 
-[Visual Studio Code](https://code.visualstudio.com) combines the simplicity of a code editor with what developers need for their core edit-build-debug cycle. It provides comprehensive code editing, navigation, and understanding support along with lightweight debugging, a rich extensibility model, and lightweight integration with existing tools.
+2.9. Configuration Files
+PyroSim stores data related to user preferences in a file called PyroSim.props. By default, this file can be found in one of the following locations.
 
-Visual Studio Code is updated monthly with new features and bug fixes. You can download it for Windows, macOS, and Linux on [Visual Studio Code's website](https://code.visualstudio.com/Download). To get the latest releases every day, install the [Insiders build](https://code.visualstudio.com/insiders).
+%APPDATA%\PyroSim\PyroSim.props
+%PROGRAMDATA%\PyroSim\PyroSim.props
 
-## Contributing
+If at least one of these files exists, PyroSim will use it to load the user preferences. If both files exist, PyroSim will load user preferences from both files, giving preference to the file located in the APPDATA folder. This way the preference file located in the PROGRAMDATA folder can be shared among multiple machines, and the file located in the APPDATA folder on each machine overrides the shared settings.
 
-There are many ways in which you can participate in this project, for example:
+The PROPS file is stored in a plaintext format, and can be viewed or edited with any conventional text editor. While it is not recommended to edit the file directly, some troubleshooting techniques may involve deleting the PROPS file so that a new one can be created from scratch by PyroSim.
 
-* [Submit bugs and feature requests](https://github.com/microsoft/vscode/issues), and help us verify as they are checked in
-* Review [source code changes](https://github.com/microsoft/vscode/pulls)
-* Review the [documentation](https://github.com/microsoft/vscode-docs) and make pull requests for anything from typos to additional and new content
+Configurations for hotkeys in PyroSim is stored in a separate file named keybindings.json located in the APPDATA folder.
 
-If you are interested in fixing issues and contributing directly to the code base,
-please see the document [How to Contribute](https://github.com/microsoft/vscode/wiki/How-to-Contribute), which covers the following:
+2.3.1. Camera Views
+The traditional orthographic views are pre-programmed into PyroSim and are valid in both the 3D and 2D views. It is also possible to save custom camera views, for more information, see Chapter 3.
+
+To change the camera view, select the desired view in the drop-down menu, as shown in Figure 3 or press the appropriate hotkey from Table 1.
+
+Table 1. Camera View Hotkeys
+View	Hotkey
+Front	CTRL+1
+Back	CTRL+2
+Left	CTRL+3
+Right	CTRL+4
+Top	CTRL+5
+Bottom	CTRL+6
