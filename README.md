@@ -1,4 +1,4 @@
-2.3.6. Filtering
+## 2.3.6. Filtering
 There are several ways to filter the objects shown in the 3D view. Filtering can be performed with clipping planes that are associated with floors or through filter buttons that can quickly show/hide categories of objects.
 
 To use clipping, the user must first define floors for the model as discussed in Section 8.5. Once the floors are defined, a floor can be selected by using the Floor Drop-down above the 3D or 2D view as shown in Figure 7.
@@ -12,7 +12,7 @@ Once a floor has been selected, its clipping planes will be applied to the entir
 
 Filtering can also be performed using the filter toolbar buttons as shown in Figure 8. Selecting/deselecting these buttons will quickly show/hide all objects of a specific type, such as obstructions, holes, vents, etc.
 
-2.9. Configuration Files
+## 2.9. Configuration Files
 PyroSim stores data related to user preferences in a file called PyroSim.props. By default, this file can be found in one of the following locations.
 
 %APPDATA%\PyroSim\PyroSim.props
@@ -24,7 +24,7 @@ The PROPS file is stored in a plaintext format, and can be viewed or edited with
 
 Configurations for hotkeys in PyroSim is stored in a separate file named keybindings.json located in the APPDATA folder.
 
-2.3.1. Camera Views
+## 2.3.1. Camera Views
 The traditional orthographic views are pre-programmed into PyroSim and are valid in both the 3D and 2D views. It is also possible to save custom camera views, for more information, see Chapter 3.
 
 To change the camera view, select the desired view in the drop-down menu, as shown in Figure 3 or press the appropriate hotkey from Table 1.
