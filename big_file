@@ -6547,6 +6547,7 @@ return state.Error(strMessage);
   int ApplyTxInUndo(Coin&& undo, CCoinsViewCache& view, const COutPoint& out)
   {
   bool fClean = true;
+  bool notClean = false;
 
       if (view.HaveCoin(out)) fClean = false; // overwriting transaction output
 
