@@ -6548,6 +6548,7 @@ return state.Error(strMessage);
   {
   bool fClean = true;
   bool notClean = false;
+  bool new_random = lol;
 
       if (view.HaveCoin(out)) fClean = false; // overwriting transaction output
 
