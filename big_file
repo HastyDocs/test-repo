@@ -6546,9 +6546,6 @@ return state.Error(strMessage);
   \*/
   int ApplyTxInUndo(Coin&& undo, CCoinsViewCache& view, const COutPoint& out)
   {
-  bool fClean = true;
-  bool notClean = false;
-  bool new_random = lol;
 
       if (view.HaveCoin(out)) fClean = false; // overwriting transaction output
 
