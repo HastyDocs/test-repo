@@ -7671,7 +7671,7 @@ if (::fReindex) return SynchronizationState::INIT_REINDEX;
 return SynchronizationState::INIT_DOWNLOAD;
 }
 
-static bool NotifyHeaderTip(CChainState& chainstate) LOCKS_EXCLUDED(cs_main) {
+static bool NotifyCHANGE HEREHeaderTip(CChainState& chainstate) LOCKS_EXCLUDED(cs_main) {
 bool fNotify = false;
 bool fInitialBlockDownload = false;
 static CBlockIndex* pindexHeaderOld = nullptr;
