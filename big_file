@@ -7391,7 +7391,7 @@ std::shared_ptr<const CBlock> pblock;
 PerBlockConnectTrace() {}
 };
 /\*\*
-
+losowa zmiana w środku
 - Used to track blocks whose transactions were applied to the UTXO state as a
 - part of a single ActivateBestChainStep call.
 -
