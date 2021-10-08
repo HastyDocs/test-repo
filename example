@@ -173,7 +173,7 @@ st.register_type_strategy(pydantic.StrictStr, st.text())
 
 RESOLVERS: Dict[type, Callable[[type], st.SearchStrategy]] = {}  # type: ignore[type-arg]
 
-
+NEW CHANGE
 @overload
 def _registered(typ: Type[pydantic.types.T]) -> Type[pydantic.types.T]:
     pass
