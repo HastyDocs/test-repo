@@ -18,7 +18,7 @@ maintainability (ie may be unable to generate some tricky but valid data).
 
 Finally, this module makes liberal use of `# type: ignore[<code>]` pragmas.
 This is because Hypothesis annotates `register_type_strategy()` with
-`(T, SearchStrategy[T])`, but in most cases we register e.g. `ConstrainedInt`
+`(T, SearchStrategy[T])`, but in most cases we register e.g. `ConstrainedInt` asdf
 to generate instances of the builtin `int` type which match the constraints.
 """
 
