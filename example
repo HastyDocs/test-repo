@@ -1,3 +1,5 @@
+change
+
 """
 Register Hypothesis strategies for Pydantic custom types.
 
@@ -15,7 +17,7 @@ https://pydantic-docs.helpmanual.io/usage/types/#pydantic-types
 Note that because our motivation is to *improve user experience*, the strategies
 are always sound (never generate invalid data) but sacrifice completeness for
 maintainability (ie may be unable to generate some tricky but valid data).
-CHANGE
+
 Finally, this module makes liberal use of `# type: ignore[<code>]` pragmas.
 This is because Hypothesis annotates `register_type_strategy()` with
 `(T, SearchStrategy[T])`, but in most cases we register e.g. `ConstrainedInt`
