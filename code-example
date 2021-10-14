@@ -356,12 +356,12 @@ def resolve_constr(cls):  # type: ignore[no-untyped-def]  # pragma: no cover
             assert min_size == 0
             strategy = st.from_regex(rf'(\W(.{repeats}\W)?)?')
 
-    if min_size == 0 and max_size is None:
-        return strategy
-    elif max_size is None:
-        return strategy.filter(lambda s: min_size <= len(s))
-    return strategy.filter(lambda s: min_size <= len(s) <= max_size)
+  return strategy.filter(lambda s: min_size <= len(s) <= max_size)
 
+testing
+a test
+
+heelo 
 
 # Finally, register all previously-defined types, and patch in our new function
 for typ in pydantic.types._DEFINED_TYPES:
