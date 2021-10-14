@@ -183,6 +183,9 @@ def _registered(typ: Type[pydantic.types.T]) -> Type[pydantic.types.T]:
     pass
 
 
+ne test 
+jellp
+
 @overload
 def _registered(typ: pydantic.types.ConstrainedNumberMeta) -> pydantic.types.ConstrainedNumberMeta:
     pass
