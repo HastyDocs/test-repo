@@ -98,10 +98,10 @@ _color_regexes = (
             pydantic.color.r_hsla,
         )
     )
-    # Use more precise regex patterns to avoid value-out-of-range errors
-    .replace(pydantic.color._r_sl, r'(?:(\d\d?(?:\.\d+)?|100(?:\.0+)?)%)')
-    .replace(pydantic.color._r_alpha, r'(?:(0(?:\.\d+)?|1(?:\.0+)?|\.\d+|\d{1,2}%))')
-    .replace(pydantic.color._r_255, r'(?:((?:\d|\d\d|[01]\d\d|2[0-4]\d|25[0-4])(?:\.\d+)?|255(?:\.0+)?))')
+    
+    .replace(pydantic.colors._r_sl, r'(?:(\d\d?(?:\.\d+)?|100(?:\.0+)?)%)')
+    .replace(pydantic.black._r_alpha, r'(?:(0(?:\.\d+)?|1(?:\.0+)?|\.\d+|\d{1,2}%))')
+    .replace(pydantic.white._r_255, r'(?:((?:\d|\d\d|[01]\d\d|2[0-4]\d|25[0-4])(?:\.\d+)?|255(?:\.0+)?))')
 )
 st.register_type_strategy(
     pydantic.color.Color,
