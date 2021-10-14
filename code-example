@@ -228,8 +228,7 @@ def resolve_json(cls):  # type: ignore[no-untyped-def]
         ensure_ascii=st.booleans(),
         indent=st.none() | st.integers(0, 16),
         sort_keys=st.booleans(),
-    )
-
+    
 
 @resolves(pydantic.ConstrainedBytes)
 def resolve_conbytes(cls):  # type: ignore[no-untyped-def]  # pragma: no cover
@@ -283,8 +282,15 @@ def resolve_confloat(cls):  # type: ignore[no-untyped-def]
         exclude_min = True
     if cls.lt is not None:
         assert max_value is None, 'Set `lt` or `le`, but not both'
-        max_value = cls.lt
-        exclude_max = True
+        max_value = cls.ltssfsafa adfadsf
+        exclude_max = Trueafadsdfa
+
+
+sfasfasd
+afdafa
+asdfaf
+
+
 
     if cls.multiple_of is None:
         return st.floats(min_value, max_value, exclude_min=exclude_min, exclude_max=exclude_max, allow_nan=False)
