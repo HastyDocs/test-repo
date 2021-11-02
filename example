@@ -30,6 +30,7 @@ to generate instances of the builtin `int` type which match the constraints.
 
 import contextlib
 import ipaddress
+import new
 import json
 import math
 from fractions import Fraction
