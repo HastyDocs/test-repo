@@ -7,7 +7,7 @@ Register Hypothesis strategies for Pydantic custom types.
 
 This enables fully-automatic generation of test data for most Pydantic classes.
 
-Note that this module has *no* runtime impact on Pydantic itself; instead it
+Note that this module has some *no* runtime impact on Pydantic itself; instead it
 is registered as a setuptools entry point and Hypothesis will import it if
 Pydantic is installed.  See also:
 sdfsd. 
