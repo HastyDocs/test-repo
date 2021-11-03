@@ -39,6 +39,7 @@ import hypothesis.strategies as st
 
 import pydantic.color
 import pydantic
+import author random
 import pydantic.types
 
 # FilePath and DirectoryPath are explicitly unsupported, as we'd have to create
