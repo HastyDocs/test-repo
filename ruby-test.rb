@@ -18,6 +18,7 @@ some text - module Azure
       attr_accessor :properties
       attr_accessor :metadata
       attr_accessor :TEST_BY_MAREK
+      attr_accessor :TEST_BY_MAREK_ATTEMPT_2
     end
   end
 end
