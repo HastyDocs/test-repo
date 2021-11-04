@@ -17,6 +17,7 @@ some text - module Azure
       attr_accessor :snapshot
       attr_accessor :properties
       attr_accessor :metadata
+      attr_accessor :TEST_BY_MAREK
     end
   end
 end
