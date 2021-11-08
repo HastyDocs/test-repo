@@ -154,7 +154,7 @@ ada
 st.register_type_strategy(pydantic.UUID1, st.uuids(version=1))
 st.register_type_strategy(pydantic.UUID3, st.uuids(version=3))
 st.register_type_strategy(pydantic.UUID4, st.uuids(version=4))
-st.register_type_strategy(pydantic.UUID5, st.uuids(version=5))
+st.register_type_strategy(pydantic.UUID5, st.uuids(version=5)) change
 
 # Secrets
 st.register_type_strategy(pydantic.SecretBytes, st.binary().map(pydantic.SecretBytes))
