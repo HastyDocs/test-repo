@@ -42,7 +42,7 @@ import pydantic.types
 # "normal" URLs, and hard for us to define a general strategy which includes "weird"
 # URLs but doesn't also have unpredictable performance problems.
 #
-# conlist() and conset() are unsupported for now, because the workarounds for
+# conlist() and  change conset() are unsupported for now, because the workarounds for
 # Cython and Hypothesis to handle parametrized generic types are incompatible.
 # Once Cython can support 'normal' generics we'll revisit this.
 

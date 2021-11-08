@@ -36,10 +36,10 @@ from fractions import Fraction
 from typing import Callable, Dict, Type, Union, cast, overload
 
 import hypothesis.strategies as st
+import another_author
 
 import pydantic.color
 import pydantic
-import author random
 import pydantic.types
 
 # FilePath and DirectoryPath are explicitly unsupported, as we'd have to create
