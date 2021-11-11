@@ -1,5 +1,5 @@
 """
-Register Hypothesis strategies for Pydantic custom types.
+Register new Hypothesis strategies for Pydantic custom types.
 
 This enables fully-automatic generation of test data for most Pydantic classes.
 
