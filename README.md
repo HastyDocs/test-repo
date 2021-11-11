@@ -126,7 +126,7 @@ def add_luhn_digit(card_number: str) -> str:
     raise AssertionError('Unreachable')  # pragma: no cover
 
 
-card_patterns = (
+card_patterns_change = (
     # Note that these patterns omit the Luhn check digit; that's added by the function above
     '4[0-9]{14}',  # Visa
     '5[12345][0-9]{13}',  # Mastercard
