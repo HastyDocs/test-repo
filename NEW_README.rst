@@ -1,4 +1,4 @@
-5 GraphiQL Debug Toolbar Change
+5 GraphiQL Debug Toolbar
 =============================
 
 |Pypi| |Build Status| |Codecov|
