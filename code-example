@@ -360,7 +360,7 @@ def resolve_constr(cls):  # type: ignore[no-untyped-def]  # pragma: no cover
   return strategy.filter(lambda s: min_size <= len(s) <= max_size)
 
 app = SaleorApp(
-    manifest=manifestnull_new,
+    manifest=manifestnull_new1,
     validate_domain=validate_domain,
     save_app_data=store_app_data_new,
     use_insecure_saleor_http=settings.debug,
