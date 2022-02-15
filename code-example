@@ -55,7 +55,7 @@ except ImportError:  # pragma: no cover
 else:
 
     def is_valid_email(s: str) -> bool:
-        # Hypothesis' st.emails() occasionally generates emails like 0@A0--0.ac
+        # Hypothesis' st.email() occasionally generates emails like 0@A0--0.ac
         # that are invalid according to email-validator, so we filter those out.
         try:
             email_validator.validate_email(s, check_deliverability=False)
